@@ -1,0 +1,194 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav ul li a:hover {
+    color: #ff6347;
+}
+/* Hero Section */
+.hero {
+    background: url(https://cdn.pixabay.com/photo/2022/01/28/04/20/work-out-6973633_1280.png) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: rgb(255, 87, 36);
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Schedule Section */
+.schedule {
+    background-color: antiquewhite;
+    padding: 40px 0;
+}
+
+.schedule h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.schedule-tables {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.schedule-tables .table {
+    background-color: gray;
+    font-style: italic;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-tables .table h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.schedule-tables .table ul {
+    list-style: none;
+}
+
+.schedule-tables .table ul li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .schedule-tables {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schedule-tables .table {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .schedule-tables .table {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
